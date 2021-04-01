@@ -1,0 +1,30 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/handler.js",
+    "scripts": {
+        "start": "NODE_ENV=dev sls offline",
+        "deploy:stage": "NODE_ENV=stage sls deploy --alias stage --verbose",
+        "deploy:prod": "NODE_ENV=prod sls deploy --alias prod --verbose"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server-lambda": "^2.22.2",
+        "graphql": "^15.5.0",
+        "graphql-tools": "^7.0.4"
+    },
+    "devDependencies": {
+        "serverless-aws-alias": "^1.8.0",
+        "serverless-dotenv-plugin": "^3.9.0",
+        "serverless-offline": "^6.9.0",
+        "serverless-plugin-typescript": "^1.1.9",
+        "serverless-webpack": "^5.4.0",
+        "ts-loader": "^8.1.0",
+        "typescript": "^4.2.3",
+        "webpack": "^5.28.0",
+        "webpack-node-externals": "^2.5.2"
+    }
+}
