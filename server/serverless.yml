@@ -81,11 +81,11 @@ functions:
     handler: src/handler.graphqlHandler
     events:
       - http:
-          path: src/handler
+          path: graphql
           method: post
           cors: true
       - http:
-          path: src/handler
+          path: graphql
           method: get
           cors: true
 #    The following are a few example events you can configure
