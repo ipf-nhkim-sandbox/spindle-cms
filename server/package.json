@@ -17,6 +17,7 @@
         "graphql-tools": "^7.0.4"
     },
     "devDependencies": {
+        "@cerner/duplicate-package-checker-webpack-plugin": "^2.1.0",
         "serverless-aws-alias": "^1.8.0",
         "serverless-dotenv-plugin": "^3.9.0",
         "serverless-offline": "^6.9.0",

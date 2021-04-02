@@ -14,7 +14,7 @@ export const createServer = () => {
       context,
     }),
     playground: {
-      endpoint: "/dev/spindle-cms-graphql",
+      endpoint: "/graphql",
     },
   });
 };

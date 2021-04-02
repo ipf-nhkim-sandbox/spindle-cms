@@ -27,6 +27,8 @@ provider:
 
   # you can overwrite defaults here
   region: ${env:SERVICE_REGION}
+  iam:
+    role: ${env:AWS_ROLE}
 
   stage: stage
 
@@ -63,6 +65,7 @@ custom:
 plugins:
   - serverless-webpack
   - serverless-aws-alias
+  - serverless-dotenv-plugin
   - serverless-offline
 
 useDotenv: true
